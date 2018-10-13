@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        color: #F8F9FB;
+      }
+      div.container {
+        max-width: 500px;
+        margin: 100px auto;
+        border: 5px solid #337EF7;
+        padding: 10px;
+        text-align: center;
+      }
+      h4, p {
+        font-family: "Helvetica";
+        color: #337EF7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Welcome to MHacks!</h4>
+      <p>plopper is up and running.</p>
+      {% if name %}
+          <h1 style = "color: black"> Hello {{ name }} </h1>
+      {% else %}
+          <h4> Hello, world!</h1>
+      {% endif %}
+    </div>
+  </body>
+</html>
